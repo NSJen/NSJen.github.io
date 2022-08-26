@@ -51,6 +51,11 @@ footer {
 }
 
 
+li {
+  list-style-position: inside;
+}
+
+
 .wrapper {
   display: grid;
   grid-template-columns: repeat(9, 1fr);
@@ -112,7 +117,7 @@ a:link {
 
 
 a:visited {
-  color: darkblue;
+  color: rgb(90, 90, 206);
 }
 
 
@@ -142,6 +147,7 @@ a:active {
 
   }
 
+
   .wrapper {
     display: grid;
     grid-template-columns: repeat(9, 1fr);
@@ -165,5 +171,4 @@ a:active {
     align-items: center;
     font-size: 12;
   }
-
 }
