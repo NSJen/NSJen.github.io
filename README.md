@@ -1,2 +1,2 @@
 Hi, I'm Jen.
-This is my profile page. 
+These are the files for my profile page. 
