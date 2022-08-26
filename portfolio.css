@@ -1,118 +1,136 @@
-
-
-
 header {
-    background: #0a646c7f;
-    color: #ffffff;
-    padding: 15px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 100%;
-    height: auto;
+  background: #0a646c7f;
+  color: whitesmoke;
+  padding: 15px;
+  display: flex;
+  align-items: center;
+  justify-content: left;
+  width: 100%;
+  height: auto;
 }
-
 
 
 body {
-    margin: 0 auto;
-    padding: em 0;
-    background: hsl(230, 16%, 37%) url(philipp-katzenberger-iIJrUoeRoCQ-unsplash.jpg) no-repeat fixed center;
-    background-size: cover;
-    height: auto;
-    justify-content: center;
-    align-items: center;
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    font-size: 18pt;
-    color: #fafafa;
-    margin: 30px;
-
+  margin: 0 auto;
+  padding: em 0;
+  background: hsl(230, 16%, 37%) url(philipp-katzenberger-iIJrUoeRoCQ-unsplash.jpg) no-repeat fixed center;
+  background-size: cover;
+  height: auto;
+  justify-content: center;
+  align-items: center;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  font-size: 18pt;
+  color: whitesmoke;
+  margin: 30px;
 }
+
 
 .flex {
   display: flex;
   flex-wrap: wrap;
 }
 
+
 .responsive {
   width: 100%;
   height: auto;
 }
 
-footer {
-    position: fixed;
-    bottom: 0;
-    left:0;
-    background-color: #0a646c7b;
-    padding: 15px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 100%;
-    height: auto;
-  }
 
-  .wrapper {
-    display: grid;
-    grid-template-columns: repeat(9, 1fr);
-    grid-auto-rows: minmax(100px, auto);
-    grid-template-areas:
-      "im hd  hd hd   hd   hd   hd   hd   hd"
-      ".  . main main main main main . ."
-      "sd sd sd sd . rs  rs  rs  rs  "
-      "ft ft ft ft   ft   ft   ft   ft   ft";
+footer {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  background-color: #0a646ce9;
+  padding: 15px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: auto;
 }
 
+
+.wrapper {
+  display: grid;
+  grid-template-columns: repeat(9, 1fr);
+  grid-auto-rows: minmax(100px, auto);
+  grid-template-areas:
+    "im hd  hd hd   hd   hd   hd   hd   hd"
+    ".  . main main main main main . ."
+    "sd sd sd sd . rs  rs  rs  rs  "
+    "ft ft ft ft   ft   ft   ft   ft   ft";
+}
+
+
 .aside {
-  background-color:hsla(226, 50%, 21%, 0.60);
+  background-color: hsla(226, 50%, 21%, 0.60);
   padding: 15px;
   text-align: center;
   height: 80%;
   width: auto;
-
 }
+
 
 .header {
   grid-area: hd;
-
 }
+
 
 .footer {
   grid-area: ft;
-
 }
+
 
 .content {
   grid-area: main;
-  background-color:hsla(227, 9%, 19%, 0.60);
+  background-color: hsla(227, 9%, 19%, 0.60);
   text-align: center;
   font-size: 22;
   margin: 30px;
- 
 }
+
+
 .left_sidebar {
   grid-area: sd;
-  
-
 }
+
 
 .image {
-grid-area: im;
+  grid-area: im;
 }
+
 
 .right_sidebar {
   grid-area: rs;
-
-
 }
 
 
+a:link {
+  color: lightsteelblue;
+}
+
+
+a:visited {
+  color: darkblue;
+}
+
+
+a:hover {
+  color: darkslateblue;
+}
+
+
+a:active {
+  color: blue;
+}
+
 
 @media all and (max-width: 1090px) {
-  .grid{
+  .grid {
     display: grid;
 
-    
+
     grid-gap: 1em
   }
 
@@ -124,24 +142,24 @@ grid-area: im;
 
   }
 
-  .wrapper  {
-      display: grid;
-      grid-template-columns: repeat(9, 1fr);
-      grid-auto-rows: minmax(100px, auto);
-      grid-template-areas:
-        "im im im im im im im im im"
-        "hd  hd hd   hd   hd   hd   hd   hd  hd"
-        "main main main main main main main main main"
-        "sd sd sd sd sd sd sd sd sd"
-        "rs  rs  rs  rs  rs rs rs rs rs"
-        "ft ft ft ft   ft   ft   ft   ft   ft";
-      font-size: auto;
+  .wrapper {
+    display: grid;
+    grid-template-columns: repeat(9, 1fr);
+    grid-auto-rows: minmax(100px, auto);
+    grid-template-areas:
+      "im im im im im im im im im"
+      "hd  hd hd   hd   hd   hd   hd   hd  hd"
+      "main main main main main main main main main"
+      "sd sd sd sd sd sd sd sd sd"
+      "rs  rs  rs  rs  rs rs rs rs rs"
+      "ft ft ft ft   ft   ft   ft   ft   ft";
+    font-size: auto;
   }
-  
+
 
   .content {
 
-    width:auto;
+    width: auto;
 
     justify-content: center;
     align-items: center;
